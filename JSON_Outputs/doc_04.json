@@ -1,0 +1,44 @@
+{
+    "menu": [
+        {
+            "nm": "RUM",
+            "cnt": "2",
+            "price": "$2,000"
+        },
+        {
+            "nm": "Piper",
+            "cnt": "1",
+            "price": "$82,000"
+        },
+        {
+            "nm": "AU CREADO COFFEE",
+            "cnt": "1",
+            "price": "$61,000"
+        },
+        {
+            "nm": "CHICKEN KESUPFF",
+            "cnt": "1",
+            "price": "$51,000"
+        },
+        {
+            "nm": "BRIBA",
+            "cnt": "Rg",
+            "price": "$19,400"
+        },
+        {
+            "nm": "SUB TOTAL",
+            "cnt": "19,400",
+            "price": "$174,600"
+        },
+        {
+            "nm": "USP",
+            "cnt": "TOTAL",
+            "price": "200,000"
+        },
+        {
+            "nm": "CAS",
+            "cnt": "8",
+            "price": "27,400"
+        }
+    ]
+}

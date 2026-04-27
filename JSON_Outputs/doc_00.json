@@ -1,0 +1,25 @@
+{
+    "menu": [
+        {
+            "nm": "TICKET CP",
+            "cnt": "2",
+            "price": "60.000"
+        },
+        {
+            "nm": "TOTAL DISC $",
+            "price": "-60.000",
+            "sub": {
+                "nm": "TAX",
+                "price": "5.455"
+            }
+        }
+    ],
+    "sub_total": {
+        "subtotal_price": "60.000"
+    },
+    "total": {
+        "total_price": "60.000",
+        "creditcardprice": "xx7730",
+        "menuqty_cnt": "2"
+    }
+}

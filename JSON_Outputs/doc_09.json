@@ -1,0 +1,21 @@
+{
+    "menu": [
+        {
+            "nm": "Bombu Kaldu Ayam 1",
+            "unitprice": "36000",
+            "cnt": "1",
+            "price": "36000"
+        },
+        {
+            "nm": "Tunai",
+            "unitprice": "50000",
+            "cnt": "50000",
+            "price": "50000"
+        }
+    ],
+    "total": {
+        "total_price": "14000",
+        "cashprice": "14000",
+        "changeprice": "0"
+    }
+}

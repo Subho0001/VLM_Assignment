@@ -1,0 +1,23 @@
+{
+    "menu": [
+        {
+            "nm": "J.STB PROMO",
+            "cnt": "17500",
+            "price": "17500"
+        },
+        {
+            "nm": "Y.B.B.BAT",
+            "cnt": "46000",
+            "price": "46000"
+        },
+        {
+            "nm": "Y.BASO PROM",
+            "cnt": "27500",
+            "price": "27500"
+        }
+    ],
+    "total": {
+        "total_price": "91000",
+        "cashprice": "91000"
+    }
+}

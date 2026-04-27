@@ -1,0 +1,22 @@
+{
+    "menu": [
+        {
+            "nm": "Kupon 15",
+            "cnt": "1",
+            "price": "100,000"
+        },
+        {
+            "nm": "ADD CHICKEN BOX",
+            "cnt": "1",
+            "price": "909"
+        }
+    ],
+    "sub_total": {
+        "subtotal_price": "100,000",
+        "tax_price": "10,099"
+    },
+    "total": {
+        "total_price": "111,000",
+        "cashprice": "Rp. 111,000"
+    }
+}

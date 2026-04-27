@@ -1,0 +1,23 @@
+{
+    "total": "50,000",
+    "creditcardpayment": "50,000",
+    "menu": [
+        {
+            "nm": "[REGI BLACK SAKURA",
+            "cnt": "1",
+            "price": "45,455",
+            "sub": [
+                {
+                    "nm": "COOKIE DOH SAUCES",
+                    "cnt": "1",
+                    "price": "0"
+                },
+                {
+                    "nm": "NATA DE COCO",
+                    "cnt": "1",
+                    "price": "0"
+                }
+            ]
+        }
+    ]
+}

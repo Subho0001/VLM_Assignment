@@ -1,0 +1,21 @@
+{
+    "total": 46000,
+    "cashprice": 50000,
+    "menuqty_cnt": [
+        {
+            "nm": "EGG TART",
+            "cnt": "1",
+            "price": "13,000"
+        },
+        {
+            "nm": "CHOCO CUS HARD PASTRY",
+            "cnt": "2",
+            "price": "24,000"
+        },
+        {
+            "nm": "REDBEAN BREAD",
+            "cnt": "1",
+            "price": "9,000"
+        }
+    ]
+}

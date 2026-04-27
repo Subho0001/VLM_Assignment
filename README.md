@@ -26,10 +26,10 @@ pip install torch transformers datasets pdf2image pillow accelerate
 
 The system is built on a modular, three-stage architecture:
 
-### Module 1: PDF Processing (`pdf_to_image`)
-Multi-page PDFs are ingested and converted into a list of high-quality RGB PIL Images. To prevent CUDA Out-of-Memory (OOM) errors during the VLM forward pass, a dynamic resizing algorithm caps the maximum dimension of any page to 800 pixels while perfectly preserving the aspect ratio. This maintains OCR fidelity while drastically shrinking the token payload.
+### Module 1: PDF Processing
+Multi-page PDF is ingested and converted into a list of high-quality RGB PIL Images. To prevent CUDA Out-of-Memory (OOM) errors during the VLM forward pass, a dynamic resizing algorithm caps the maximum dimension of any page to 800 pixels while perfectly preserving the aspect ratio. This maintains OCR fidelity while drastically shrinking the token payload.
 
-### Module 2: Intelligent Routing & Inference (`vlm_engine`)
+### Module 2: Loading Model and Prompting
 This is the core VLM integration. The module acts as an intelligent router, mapping specific document tasks to highly constrained prompt templates:
 * **JSON Extraction Prompt:** Forces the model to ignore conversational filler and return raw nested JSON.
 * **Signature Prompt:** Constrains the output space to a strict "Yes" or "No" binary.
@@ -37,7 +37,7 @@ This is the core VLM integration. The module acts as an intelligent router, mapp
 
 **Inference Parameters:** The generation engine explicitly uses **Greedy Decoding** (`do_sample=False`). By disabling temperature and creative sampling, the model is forced into deterministic extraction, virtually eliminating the "hallucinations" (invented items or prices) common in generative models.
 
-### Module 3: Output Sanitization & Evaluation (`eval_metrics`)
+### Module 3: Output Visualization & Evaluation
 Because LLMs occasionally omit syntax (like closing brackets) which causes standard `json.loads()` to crash, this module introduces a **Regex Fallback Parser**. If strict JSON parsing fails, the regex sweeps the raw model string to rescue all valid `"key": "value"` pairs. The extracted pairs are then flattened into sets and evaluated against the CORD-v2 ground truth using normal strict accuracy scores, Precision, Recall, and F1 scoring.
 
 ---
